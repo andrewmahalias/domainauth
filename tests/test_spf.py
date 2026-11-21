@@ -1,9 +1,9 @@
 import asyncio
 
-from domainauth.models import Status
-from domainauth.resolver import TemporaryDnsError
-from domainauth.spf import check_spf, count_lookups
-from domainauth.testing import FakeResolver
+from app.domainauth.models import Status
+from app.domainauth import TemporaryDnsError
+from app.domainauth.spf import check_spf, count_lookups
+from app.domainauth.testing import FakeResolver
 
 INC = "spf.provider.example"
 

@@ -1,9 +1,9 @@
 import asyncio
 
-from domainauth.dmarc import check_dmarc
-from domainauth.models import Status
-from domainauth.resolver import TemporaryDnsError
-from domainauth.testing import FakeResolver
+from app.domainauth.dmarc import check_dmarc
+from app.domainauth.models import Status
+from app.domainauth import TemporaryDnsError
+from app.domainauth.testing import FakeResolver
 
 
 def check(zone):

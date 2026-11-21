@@ -5,6 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "domainauth"
 version = "0.1.0"
+license = { text = "MIT" }
 description = "Async SPF/DKIM/DMARC verification with an injectable DNS resolver"
 requires-python = ">=3.10"
 dependencies = ["dnspython>=2.4", "cryptography>=41"]

@@ -1,8 +1,8 @@
 import asyncio
 
-from domainauth import verify_domain
-from domainauth.resolver import TemporaryDnsError
-from domainauth.testing import FakeResolver
+from app.domainauth import verify_domain
+from app.domainauth import TemporaryDnsError
+from app.domainauth.testing import FakeResolver
 
 KW = dict(spf_include="spf.provider.example", dkim_selector="qeakflow", dkim_expected="AAAA")
 

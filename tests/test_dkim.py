@@ -1,9 +1,9 @@
 import asyncio
 
-from domainauth.dkim import check_dkim, chunk_txt, generate_dkim_keypair, parse_tags
-from domainauth.models import Status
-from domainauth.resolver import TemporaryDnsError
-from domainauth.testing import FakeResolver
+from app.domainauth.dkim import check_dkim, chunk_txt, generate_dkim_keypair, parse_tags
+from app.domainauth.models import Status
+from app.domainauth import TemporaryDnsError
+from app.domainauth.testing import FakeResolver
 
 HOST = "qeakflow._domainkey.example.de"
 
